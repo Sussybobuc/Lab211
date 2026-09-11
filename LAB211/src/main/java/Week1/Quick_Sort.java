@@ -6,6 +6,23 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Quick_Sort {
+    public static void qSort(int[] arr, int low, int high){
+        if (low >= high)
+            return;
+        int pivot = arr[(low + high)/2];
+        int i = low; int j = high;
+        while (arr[i] < pivot) i++;
+        while (arr[j] > pivot) j--;
+        if (i <= j){
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+            i++;
+            j--;
+        }
+        qSort(arr, low, j);
+        qSort(arr, i, high);
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = -1;
@@ -28,9 +45,7 @@ public class Quick_Sort {
             arr[i] = rand.nextInt(10-1)+1;
         }
         System.out.println("Unsorted array: " + Arrays.toString(arr));
-
-
-        //int p = arr[n/2];
-
+        qSort(arr, 0, n-1);
+        System.out.println("Sorted array: " + Arrays.toString(arr));
     }
 }

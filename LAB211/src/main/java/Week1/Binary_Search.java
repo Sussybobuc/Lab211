@@ -53,7 +53,7 @@ public class Binary_Search {
         System.out.println("Sorted array: " + Arrays.toString(arr));
         int index = bSearch(arr, s, 0, n - 1);
         if (index != -1)
-            System.out.println("Found " + s + "at index " + index);
+            System.out.println("Found " + s + " at index " + index);
         else
             System.out.println("Not found!");
     }

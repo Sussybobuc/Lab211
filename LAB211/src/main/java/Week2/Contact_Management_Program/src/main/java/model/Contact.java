@@ -15,7 +15,7 @@ public class Contact {
     protected String firstname;
     private static int nextID = 1;
 
-    public Contact(String fullname, String group, String address, String phone, String lastname, String firstname) {
+    public Contact(String fullname, String firstname, String lastname, String group, String address, String phone) {
         this.ID = nextID;
         nextID++;
         this.fullname = fullname;
@@ -31,11 +31,7 @@ public class Contact {
     }
 
     public String getFullname() {
-        return fullname;
-    }
-
-    public void setFullname(String fullname) {
-        this.fullname = fullname;
+        return firstname + lastname;
     }
 
     public String getGroup() {
@@ -80,6 +76,6 @@ public class Contact {
 
     @Override
     public String toString() {
-        return String.format("%-5d%-15s%-10s%-10s%-8s%-15s%-10s", ID, fullname, firstname, lastname, group, address, phone);
+        return String.format("%-5d%-15s%-15s%-15s%-8s%-15s%-10s", ID, fullname, firstname, lastname, group, address, phone);
     }
 }

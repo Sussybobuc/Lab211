@@ -76,7 +76,7 @@ public class DataInput {
             try {
                 int result = sc.nextInt();
                 sc.nextLine();
-                if (result >= 1 && result <= 5) {
+                if (result >= 1 && result <= 4) {
                     return result;
                 } else {
                     System.out.println("Please input a number in the range 1 -> 4");

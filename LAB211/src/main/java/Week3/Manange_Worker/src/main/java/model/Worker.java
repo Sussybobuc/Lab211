@@ -1,5 +1,6 @@
 package model;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class Worker {
@@ -17,6 +18,15 @@ public class Worker {
         this.age = age;
         this.salary = salary;
         this.work_location = work_location;
+        this.historyList =  new ArrayList<>();
+        SalaryHistory entry = new SalaryHistory(
+                id,
+                name,
+                age,
+                salary,
+                "-",
+                LocalDate.now());
+        historyList.add(entry);
     }
 
     public String getId() {

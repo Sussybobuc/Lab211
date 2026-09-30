@@ -16,7 +16,7 @@ public class WorkerList {
         workerList.add(worker);
     }
 
-    public boolean addWorker(List<Worker> list, Worker worker) {
+    public boolean addWorker( Worker worker) {
         if ((findWorkerByCode(getWorkerList(), worker.getId()) == null)
                 && (worker.getAge() >= 18 && worker.getAge() < 50)
                 && worker.getSalary() > 0) {
@@ -58,7 +58,10 @@ public class WorkerList {
     public List<SalaryHistory> getInformationSalary(){
         List<SalaryHistory> HistoryList = new ArrayList<>();
         for (Worker worker : workerList) {
-            HistoryList.addAll(worker.getHistoryList());
+            for (SalaryHistory history : worker.getHistoryList()) {
+                if (history.getStatus().equals("-")) continue;
+                HistoryList.add(history);
+            }
         }
         HistoryList.sort(Comparator.comparing(SalaryHistory::getId));
         return HistoryList;

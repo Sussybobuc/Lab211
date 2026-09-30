@@ -15,7 +15,7 @@ public class ManageWorker {
             int choice = Menu.getChoice();
             switch (choice) {
                 case 1:
-                    boolean success = workerList.addWorker(workerList.getWorkerList(), consoleForm.addWorker());
+                    boolean success = workerList.addWorker( consoleForm.addWorker());
                     if (!success) System.out.println("Failed to add worker.");
                     else break;
                 case 2:

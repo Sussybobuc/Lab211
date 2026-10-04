@@ -32,8 +32,7 @@ public class ConsoleForm {
     public String deleteTask() {
         System.out.println("---------Del Task------");
         System.out.print("ID:");
-        String id = DataInput.inputString();
-        return id;
+        return DataInput.inputString();
     }
         public void getDataTask(String formatted) {
         System.out.println("----------------------------------------- Task ---------------------------------------");

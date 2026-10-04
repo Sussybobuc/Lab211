@@ -64,7 +64,8 @@ public class TaskList {
         taskList.remove(found);
     }
 
-        public int addTask(String requirementName, String assignee, String reviewer, String taskTypeID, String date, String planFrom, String planTo) {
+        public int addTask(String requirementName, String assignee, String reviewer,
+                           String taskTypeID, String date, String planFrom, String planTo) {
         int typeID;
         double from, to;
         try{
@@ -82,7 +83,7 @@ public class TaskList {
         try{
             from = Double.parseDouble(planFrom);
             to = Double.parseDouble(planTo);
-            if(!(from < to && ((from >= 8 && from <= 17.5) && (to >= 8 && to <= 17.5)) )) return -1;
+            if(!(from < to && from >= 8 && from <= 17.5 && to <= 17.5)) return -1;
         } catch (NumberFormatException e){
             return -1;
         }

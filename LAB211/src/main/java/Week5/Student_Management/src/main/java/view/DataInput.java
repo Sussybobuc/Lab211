@@ -16,6 +16,7 @@ public class DataInput {
             }
         }
     }
+
     public static int inputInt() {
         while (true) {
             try {

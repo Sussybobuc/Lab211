@@ -1,3 +1,4 @@
 /LAB211/target/
 /LAB211/src/main/java/Week4/StringAnalysis/target/
 *.zip
+.idea/

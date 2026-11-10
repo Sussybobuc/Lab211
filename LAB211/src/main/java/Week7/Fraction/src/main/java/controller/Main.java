@@ -1,5 +1,7 @@
 package controller;
 
+import model.Fraction;
+
 public class Main {
     public static void main(String[] args) {
         ManageFraction manageFraction = new ManageFraction();

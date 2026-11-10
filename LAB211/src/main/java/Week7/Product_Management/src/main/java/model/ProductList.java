@@ -3,14 +3,14 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class productList {
+public class ProductList {
     private ArrayList<Product> pList = new ArrayList<>();
 
-    public ArrayList<Product> getpList() {
+    public ArrayList<Product> getpList(){
         return pList;
     }
 
-    public void setpList(ArrayList<Product> pList) {
+    public void setpList(ArrayList<Product> pList){
         this.pList = pList;
     }
 

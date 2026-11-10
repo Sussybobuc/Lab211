@@ -18,6 +18,7 @@ public class Product {
         this.type = type;
     }
 
+
     public String getProductId() {
         return productId;
     }

@@ -135,6 +135,8 @@ public class ConsoleForm {
         }
     }
 
+
+
     public String inputDeleteID(){
         System.out.println("DELETE PRODUCT");
         System.out.print("Enter product's id: ");

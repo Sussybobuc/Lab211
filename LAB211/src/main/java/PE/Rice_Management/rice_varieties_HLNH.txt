@@ -1,0 +1,5 @@
+name=Jasmine,origin=Thailand,harvestDate=10/01/2012,diseaseResistance=High
+name=Basmati,origin=India,harvestDate=15/07/2016,yield=5.0,diseaseResistance=Moderate
+name=Koshihikari,origin=Japan,harvestDate=20/05/2018,yield=5.5,diseaseResistance=Low
+name=Arborio,origin=Italy,harvestDate=10/09/2020,yield=4.2,diseaseResistance=Moderate
+name=Samba,origin=Vietnam,harvestDate=2009,yield=4.8,diseaseResistance=High

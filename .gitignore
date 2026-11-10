@@ -2,4 +2,5 @@
 /LAB211/src/main/java/Week4/StringAnalysis/target/
 *.zip
 .idea/
-.DS_Store
+.DS_Store.DS_Store
+.idea/

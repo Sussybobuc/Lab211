@@ -10,7 +10,7 @@ import java.util.List;
 public class ManageProduct {
 
     ConsoleForm consoleForm = new ConsoleForm();
-    productList productList = new productList();
+    ProductList productList = new ProductList();
 
     public void execute() {
         while (true) {
